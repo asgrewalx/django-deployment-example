@@ -1,0 +1,19 @@
+<!doctype html>
+{% extends "basic_app/base.html" %}
+  
+  {% block body_block %}
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container-fluid">
+            <h1 class="display-3">Welcome to the Homepage!</h1>
+            <p class="lead">This project focuses on teaching the concepts of templates URLs</p>
+            <hr class="my-2">
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="{% url 'basic_app:relative' %}" role="button">Go to relative URL page</a>
+            </p>
+        </div>
+    </div>
+      <h3 class='text-center'>Text from the <bold>context_dict</bold>: {{ text|chop:"hello" }}</h3>
+      <h3 class='text-center'>Number from the <bold>context_dict</bold>: {{number|add:"1000"}}</p>
+  {% endblock %}
+
+</html>

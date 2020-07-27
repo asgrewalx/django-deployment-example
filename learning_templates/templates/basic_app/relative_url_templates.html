@@ -1,0 +1,10 @@
+<!doctype html>
+{% extends 'basic_app/base.html' %}
+  
+  {% block body_block %}    
+      <div class="container text-center">
+          <h1>Welcome to <bold>Relative URL Templates.html</bold></h1>
+            <a class="btn btn-primary" href="{% url 'basic_app:other' %}" role="button">Link to Other</a>
+      </div>
+  {% endblock body_block %}
+    
